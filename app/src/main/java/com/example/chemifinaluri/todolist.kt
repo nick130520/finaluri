@@ -37,7 +37,7 @@ class todolist : Fragment() {
                 setPositiveButton("change") { dialog, which ->
                     val value = editText.text.toString()
                     todoData!!.add(value)
-                    val adapter = i
+                    val adapter =
                         ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1)
                     adapter.addAll(todoData as List<String>)
                     todoList!!.adapter = adapter
@@ -49,5 +49,6 @@ class todolist : Fragment() {
             }
         }
         return M
+
     }
 }
